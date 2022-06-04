@@ -20,7 +20,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid red;
   font-weight: 500;
   font-size: 1rem;
   height: 100px;
@@ -308,7 +307,6 @@
 }
 
 .container-footer {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,12 +345,10 @@ footer .footer-row {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 50px 0 0 0;
-  border: 1px solid red;
 }
 
 footer .footer-row .column {
   width: 200px;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,7 +371,6 @@ footer .footer-row .column {
 footer .footer-row span {
   padding: 20px;
   font-size: 0.8rem;
-  border: 1px solid red;
   width: 100%;
   text-align: center;
 }
@@ -383,7 +378,6 @@ footer .footer-row span {
 footer .logo-container {
   display: inline-block;
   padding: 20px 0;
-  border: 1px solid red;
 }
 
 footer .logo-container .logo-footer {
@@ -392,7 +386,6 @@ footer .logo-container .logo-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid red;
 }
 
 footer .logo-container .logo-footer img {
@@ -409,7 +402,6 @@ footer .logo-container .social-media {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style: none;
-  border: 1px solid red;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -420,7 +412,6 @@ footer .logo-container .social-media li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid red;
 }
 
 footer .logo-container .social-media li a {
@@ -453,7 +444,6 @@ footer .footer-text {
   font-size: 0.8rem;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  border: 1px solid red;
 }
 
 footer .footer-text h1 {
@@ -473,7 +463,6 @@ footer .footer-text li a {
 
 @media (max-width: 500px) {
   .container-footer {
-    border: 1px solid red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -489,7 +478,6 @@ footer .footer-text li a {
   }
   .column {
     width: 100%;
-    border: 1px solid red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -574,7 +562,6 @@ body .full-height-container {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  border: 1px solid #2e1fff;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -589,7 +576,6 @@ body .full-height-container {
 
 .hero-section .text-box h1 {
   display: block;
-  border: 1px solid red;
   width: 100%;
   font-size: 2.5rem;
 }
@@ -646,13 +632,11 @@ body .full-height-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid #2e1fff;
   min-width: 50%;
   height: auto;
 }
 
 .hero-section .image-box .image {
-  border: 1px solid #2e1fff;
   height: 100vh;
   min-width: 100%;
   background-repeat: no-repeat;
