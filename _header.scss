@@ -1,0 +1,413 @@
+@import './variables';
+
+
+.navbar {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+    font-weight: 500;
+    font-size: 1rem;
+    height: 100px;
+    position: relative;
+    
+    .logo {
+
+        width: 300px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+        
+   
+
+        img {
+
+            width: 100%;
+            height: auto;
+            
+
+        }
+        
+        a {
+
+            display: inline-block;
+            width: 100%;
+            word-break: keep-all;            
+        }
+
+    }
+
+    #main-button {
+
+        display: none;
+
+
+    }
+
+
+    
+
+
+
+    
+        
+    .nav-links {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0; 
+        justify-content: space-between;
+        width: 100%;
+        margin-right: 1rem;
+        
+        ul {
+
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+           
+
+            li {
+
+                box-sizing: border-box;
+                width: 100%;
+                display: inline-block;    
+
+
+                .call-to-action {
+
+                    box-sizing: border-box;
+                    width: 100%;
+                    border-radius: 3px;
+                    color: white;
+                    font-weight: bold;
+                    line-height: 3rem;
+                    padding: 0 20px;
+                    background-color: $secondary-color;
+                    transition: background-color .2s ease-in;
+        
+                    &:hover {
+        
+        
+                        
+                        background-color: $hover-color;
+        
+                    }
+        
+        
+        
+                }
+
+                a {
+
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                    color: $primary-color;
+                    white-space: nowrap;
+    
+                }
+
+
+
+            }
+
+
+           
+
+
+
+        }
+            
+       
+
+
+
+    }
+
+     
+    
+        
+
+    }
+
+
+
+
+
+/* @media (max-width: 656px) {
+
+
+
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        position: absolute;
+        top: 100px;
+        background-color: aqua;
+
+        ul {
+
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+           
+            justify-content: space-around;
+
+
+        }
+
+    } 
+
+
+
+
+
+} */
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 650px) {
+
+
+    body {
+
+        overflow-x: hidden;
+       
+
+        .navbar {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+
+
+        .logo {
+
+            width: 210px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            margin-right: 1rem;
+            padding-left: 15px;            
+       
+    
+            img {
+    
+                width: 100%;
+                height: auto;
+                
+    
+            }
+
+        }
+    
+    }
+    
+}
+    .nav-links {
+
+            
+             
+       position: absolute;
+
+        
+        
+        #mobile-link {
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            flex-grow: 1;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            width: 100%;
+            height: 50vh;
+            box-sizing: border-box;
+            background-color: rgb(109, 4, 109);
+            transform: translate(100%);
+            transition: all .2s ease-in;
+           
+
+            
+
+            #li-mobile {
+                
+                box-sizing: border-box;
+                display: inline-block;
+                line-height: 4rem; 
+                background-color: rgba(196, 8, 196, 0.486);
+                width: 100%;
+                flex-grow: 1;
+
+
+                &:hover {
+    
+    
+                    background-color: $hover-color;
+                    
+
+                }
+
+
+
+                #a-mobile {
+
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                    color: white;
+                    flex-grow: 1;
+                
+                
+                }    
+                
+                #call-to-action-mobile {
+
+
+                    background-color: transparent;
+                    
+
+
+                }
+    
+                    
+
+            
+
+
+           
+                
+            }
+
+
+
+        }
+
+    }
+
+    /* NAVBAR BUTTON */
+
+    .nav-button {
+
+        padding: 28px 28px;
+        position: relative;
+
+        .nav {
+
+            width: 28px;
+            height: 4px;
+            background-color: rgb(128, 0, 128);
+            display: block;
+            position: relative;
+            cursor: pointer;
+            transition: background .2s ease-in;
+
+            &::before {
+                
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(128, 0, 128);
+                position: absolute;
+                top: 10px;
+                transition: background .2s ease-in;
+
+            }
+
+            &::after {
+            
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(128, 0, 128);
+                position: absolute;
+                top: -10px;
+                transition: background .2s ease-in;
+    
+            }
+
+
+
+        } 
+
+
+
+    }
+
+    #main-button:checked ~ .nav-links .link {
+
+        transform: translate(0);
+        
+
+
+    }
+
+    /* navbar button - animations */
+
+    #main-button:checked ~ .nav-button .nav {
+
+        background-color: transparent;
+
+
+    }
+
+    #main-button:checked ~ .nav-button .nav::before {
+
+        position: absolute;
+        top: 0;
+        transform: rotate(-45deg);
+        
+
+
+    }
+
+    #main-button:checked ~ .nav-button .nav::after {
+
+        position: absolute;
+        top: 0;
+        transform: rotate(45deg);
+
+
+    }
+
+
+
+}

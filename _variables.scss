@@ -1,0 +1,42 @@
+/* Colors */
+
+$primary-color: rgb(128, 0, 128);
+$secondary-color: rgb(10, 10, 134);
+$tertiary-color: rgb(128, 128, 128);
+$hover-color: rgb(182, 81, 182);
+$black-gradient: rgba(0, 0, 0, 0.13);
+$white-gradient: rgba(255, 255, 255, 0.418);
+
+/* Buttons */
+
+@mixin button ($dimension) {
+
+             background-image: linear-gradient(to right, $primary-color, $secondary-color);
+             color: white;
+             font-size: 2rem;
+             font-weight: bold;
+             border: 0px solid transparent;
+             line-height: 4rem;
+             padding: 0 30px;
+             border-radius: 10px;
+             box-shadow: 2px 2px 15px rgb(92, 33, 131);
+             font-size: $dimension;
+
+}
+
+
+/* Text container */
+
+@mixin text {
+
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+}

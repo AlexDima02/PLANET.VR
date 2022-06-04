@@ -1,0 +1,757 @@
+@import './variables';
+@import './header';
+@import './footer';
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+
+
+}
+
+
+
+body {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+
+    .full-height-container {
+
+        display: flex;
+        flex-direction: column;
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+        min-height: 100vh;
+        border: 1px solid red;
+
+
+    }
+
+
+
+}
+
+/* Hero Section */
+
+.hero-section {
+
+    
+    width: 100%;
+    border: 1px solid rgb(46, 31, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    
+
+    .text-box {
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border: 1px solid rgb(46, 31, 255);
+        flex-grow: 1;
+        font-size: 2rem;
+        padding:  0 3rem;
+        
+
+
+        p {
+
+            font-size: 1.7rem;
+            padding-top: 3rem
+
+
+        }
+
+        h1 {
+
+
+            display: block;
+            border: 1px solid red;
+            width: 100%;
+            font-size: 2.5rem;
+
+
+        }
+
+
+
+        .btn {
+
+
+             background-image: linear-gradient(to right, $primary-color, $secondary-color);
+             color: white;
+             font-size: 2rem;
+             font-weight: bold;
+             border: 0px solid transparent;
+             line-height: 4rem;
+             padding: 0 30px;
+             border-radius: 10px;
+             box-shadow: 2px 2px 15px rgb(92, 33, 131);
+             transition: transform 0.5s ease-out;
+             margin-top: 2rem;
+
+            &:hover {
+
+                transform: translateY(10px);
+                cursor: pointer;
+
+
+
+            }
+
+
+        }
+
+        .btn-info {
+
+
+            border: 1px solid purple;
+            background-color: transparent;
+            line-height: 1.8rem;
+            max-width: 60%;
+            text-align: start;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.5s ease-in-out;
+            margin-top: 2rem;
+           
+
+
+            &:hover {
+
+                
+                background-color: rgb(0, 120, 156);
+
+
+            }
+            
+
+
+            strong {
+
+                margin-left: 20px;
+                
+
+
+            }
+
+
+        }
+
+    }
+
+
+    .image-box {
+
+
+
+        display: flex;
+        border: 1px solid rgb(46, 31, 255);
+        min-width: 50%;
+        height: auto;
+        
+        
+        .image {
+
+            border: 1px solid rgb(46, 31, 255);
+            height: 100vh; 
+            min-width: 100%;
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-size: contain;
+            background-image: url('./images/hero-photo.png');
+            
+
+
+        }
+    
+    }
+
+
+
+}
+
+
+
+@media (max-width: 500px) {
+
+    .hero-section {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+
+
+    }
+
+    .text-box {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        font-size: 0.5rem;
+
+        p {
+
+            font-size: 0.2rem;
+           
+
+        }
+
+
+    }
+
+
+    .image-box {
+
+        display: none;
+        
+        
+
+        .image {
+
+            
+            display: none;
+            
+
+        }
+
+
+    }
+
+
+}
+
+
+/* Info Section */
+
+
+.info-section {
+
+
+    background-color: purple;
+    font-size: 1.7rem;
+    color: white;
+    
+
+}
+
+
+
+.text {
+
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+
+.header-image {
+
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+
+    img {
+
+
+        width: 150px;
+        height: auto;
+       
+
+    }
+
+
+    h1 {
+
+        
+        font-size: 2rem;
+        margin-left: 2rem;
+
+
+    }
+    
+    
+}
+
+
+.btn-text {
+
+
+    @include button(1.2rem);
+    margin-top: 40px;
+    margin-top: 6rem;
+    
+    strong {
+
+        margin-left: 20px;
+        font-size: 1.5rem;
+
+    }
+
+}
+
+
+}
+
+
+@media (max-width: 500px) {
+
+
+    .info-section {
+
+
+        padding: 20px;
+       
+
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+/* Showcase Section */
+
+.showcase-section {
+
+    background-color: purple;
+    font-size: 1.7rem;
+    color: white;
+    
+
+
+
+}
+
+
+
+
+
+
+.header-full-height {
+
+
+    background-image: url('./images/background-test.png');
+    min-height: 50vh;
+    min-width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+
+.presentation-container {
+
+
+    display: flex;
+    flex-direction: row;
+    
+
+    .product-box {
+
+        flex-grow: 1;
+        min-width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        
+        
+        .product-image {
+
+
+            background-image: url('./images/product-showcase.png');
+            height: 100vh; 
+            min-width: 100%;
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-size: contain;
+            flex-grow: 1;
+
+        }
+    
+    
+    }
+
+    .text {
+
+
+
+        ul {
+
+
+        
+            li {
+
+
+                list-style: none;
+                margin-bottom: 1.5rem;
+
+
+                img {
+
+
+                    width: 50px;
+                    margin-right: 1rem;
+                    
+
+                }
+
+
+
+            }
+
+
+        }
+
+
+    }
+}
+
+
+@media (max-width: 500px) {
+
+
+    
+    
+    
+    
+    .presentation-container {
+
+
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+
+    }
+
+
+    .product-image {
+
+
+        display: none;
+
+
+    }
+
+
+
+}
+
+
+
+/* Tutorial Section */
+
+
+.tutorial-section {
+
+
+    background-image: linear-gradient($primary-color, $secondary-color);
+    font-size: 1.5rem;
+    color: white;
+
+
+    h1 {
+
+        text-align: center;
+        margin-top: 80px;
+        padding: 20px;
+
+
+    }
+
+
+    .row {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin: 50px 0;
+        
+        
+        img {
+
+
+            max-width: 160px;
+            height: auto;
+
+
+        }
+
+
+
+        .grid-container {
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            height: 450px;
+            border: 2px solid white; 
+            border-radius: 10px;
+            background-image: linear-gradient(45deg, $black-gradient, $white-gradient);
+            backdrop-filter: blur(10px);
+            justify-content: space-between;
+            position: relative;
+            padding: 0 30px;
+            
+
+            .header-block {
+
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+                margin-top: 30px;
+                
+                
+                
+                .card-image-container {
+                    
+                    
+                   
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    flex-grow: 1;
+                    
+                    
+                
+                
+                .card-image {
+
+
+                    background-image: url('./images/oculus-vr.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    object-fit: contain;
+                    height: 100%;
+                    
+                    
+
+
+                }
+
+
+
+
+            }
+           
+            }
+
+
+            .text-block {
+
+                width: 100%;
+                display: inline-block;
+                height: auto;
+                text-align: center;
+                font-size: 1.4rem;
+                flex-grow: 1; 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+
+            }
+
+        }
+
+
+        
+
+
+
+
+    }
+
+
+
+}
+
+
+
+@media (max-width: 800px) {
+
+
+    .row {
+
+
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+
+
+
+
+    }
+
+
+
+}
+
+
+/* Promo Section */
+
+
+.promo-section {
+
+
+    background-color: $primary-color;
+    color: white;
+    font-size: 1.7rem;
+    background-image: linear-gradient(to top, $primary-color, $secondary-color);
+
+
+}
+
+
+
+.promo-box {
+
+    
+    display: flex;
+    min-width: 50%;
+    height: auto;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+
+
+
+    .gift-image {
+
+
+        background-image: url('./images/gift.png');
+        min-width: 80%;
+        height: 100vh;
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: contain;
+    
+        
+    }
+
+
+
+
+}
+
+
+.text-gift {
+
+    @include text; 
+    text-align: center; 
+    
+
+    .btn-promo {
+
+        @include button(1.2rem);
+        margin-top: 60px;
+        font-size: 1.5rem;
+
+        strong {
+
+            margin-left: 1rem;
+            font-size: 1.5rem;
+        }
+
+
+    }
+
+    h1 {
+
+        margin-bottom: 40px;
+        font-size: 3rem;
+        background-image: linear-gradient(to top, rgb(57, 208, 253), rgb(253, 116, 235));
+        -webkit-background-clip: text; /* we applied the background to the text */
+        -webkit-text-fill-color: transparent; /* we remove the color of text in order to see the background from behind */
+
+
+
+
+    }
+
+
+    
+
+
+}
+
+
+@media (max-width: 500px) {
+
+        
+    .promo-box {
+
+        display: none;
+
+
+    }
+
+
+
+    .text-gift {
+
+
+        @include text;
+        margin: 100px 0;
+        padding: 20px;
+
+    }
+
+
+}
